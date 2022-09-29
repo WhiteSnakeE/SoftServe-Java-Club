@@ -22,12 +22,11 @@ public class Task3 {
         if (discriminant > 0) {
             firstRoot = (-b + Math.sqrt(discriminant)) / (2 * a);
             secondRoot = (-b - Math.sqrt(discriminant)) / (2 * a);
-            return ("First root is + " + String.format("%.1f", firstRoot) +
-                    " second root is + " + String.format("%.1f", secondRoot));
+            return "First root is " +  firstRoot + " second root is " +  secondRoot;
         } else if (discriminant == 0) {
             firstRoot = -b / (2 * a);
-            return ("Root is + " + String.format("%.1f", firstRoot));
-        } else return ("No roots");
+            return "Root is " + firstRoot;
+        } else return "No roots";
     }
 
     private static double findDiscriminant(double a, double b, double c) {
