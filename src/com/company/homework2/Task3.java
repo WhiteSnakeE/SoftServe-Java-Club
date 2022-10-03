@@ -9,11 +9,13 @@ public class Task3 {
         if (number < 0) System.out.println("Incorrect value");
         else
             System.out.print("This value is prime? : ");
-            System.out.println(isThisNumberIsPrime(number));
+        System.out.println(isThisNumberIsPrime(number));
     }
 
     private static boolean isThisNumberIsPrime(int number) {
-        for (int i = 2; i < number; i++) for (int j = 2; j < i; j++) if (number % j == 0) return false;
+        for (int i = 2; i < number - 1; i++) if (number % i == 0) return false;
         return true;
     }
+
+  
 }
